@@ -31,7 +31,7 @@
 		$tmpStr = implode($tmpArr); 
 		$tmpStr = sha1($tmpStr);
 		//compare the send signature with the produce one
-		if($tmpStr == $echostr){
+		if($tmpStr == $signature){
 			echo $echostr;
 			exit;
 		}
