@@ -32,7 +32,7 @@
 		$tmpStr = sha1($tmpStr);
 		//compare the send signature with the produce one
 		if($tmpStr == $echostr){
-			echo $_GET['echostr'];
+			echo $echostr;
 			exit;
 		}
         }
