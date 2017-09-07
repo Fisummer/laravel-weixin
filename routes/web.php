@@ -17,3 +17,4 @@ Route::get('/', function () {
 Route::get('test',function(){
 	return 'this is test message';
 });
+Route::any('api','WxController@api');
