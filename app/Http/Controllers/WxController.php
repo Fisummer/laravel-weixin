@@ -33,8 +33,7 @@
 		//compare the send signature with the produce one
 		if($tmpStr == $echostr){
 		    
-			return $echostr;
-			exit;
+			return true;
 		    
 		
 		}else{
