@@ -3,7 +3,7 @@
     class WxController extends Controller
     {
 
-	    public function api()
+	    public function apiback()
 	    {
 		    $echostr = $_GET['echostr'];
 	        if(self::verifySignature()){
@@ -14,7 +14,7 @@
 	    
 	    
 	    }
-        private static function verifySignature()
+        public function api()
         {
 		//define data send from weixin server 
 		$timestamp = $_GET['timestamp'];
@@ -32,18 +32,7 @@
 		$tmpStr = sha1($tmpStr);
 		//compare the send signature with the produce one
 		if($tmpStr == $echostr){
-		    
-			return true;
-		    
-		
-		}else{
-		    
-		    return false; 
-		
-		}	
-        
-    
+			echo $_GET['echostr'];
+		}
         }
-    
-    
     }
