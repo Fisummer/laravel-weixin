@@ -12,8 +12,8 @@
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    return "hello world";
 });
-Route::get('test',function(){
-	return "test";
+Route::get('abc',function(){
+	return 12345;
 });
