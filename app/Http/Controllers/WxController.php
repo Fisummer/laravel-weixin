@@ -68,9 +68,9 @@
             $fromuser = $xmlObj->ToUserName;
             $time = time();
             $msgType = 'text';
-            $conent = 'thanks for your subscribtion !';
+            $content = 'thanks for your subscribtion !';
 
-           $senddata =  sprintf($sendTemplate,$touser,$fromuser,$time,$msgType,$conent);
+           $senddata =  sprintf($sendTemplate,$touser,$fromuser,$time,$msgType,$content);
 
            echo $senddata;
 
