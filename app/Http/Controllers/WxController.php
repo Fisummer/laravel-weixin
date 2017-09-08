@@ -1,19 +1,21 @@
 <?php
     namespace App\Http\Controllers;
+    use App\Http\Requests;
+    use Illuminate\Http\Request;
     class WxController extends Controller
     {
 
-	    /*public function api()
+	/* public function api()
 	    {
 		    $echostr = $_GET['echostr'];
 	        if(self::verifySignature()){
 			echo $echostr;
 			exit;
 		
-		}*/
+		}
 	    
 	    
-	    }
+	    }*/
         public static  function verifySignature()
         {
 		//define data send from weixin server 
