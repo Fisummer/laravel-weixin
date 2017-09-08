@@ -53,7 +53,7 @@
                 /* libxml_disable_entity_loader is to prevent XML eXternal Entity Injection,
                    the best way is to check the validity of xml by yourself */
 //                libxml_disable_entity_loader(true);
-                $postObj = simplexml_load_string($postStr);
+                $postObj = simplexml_load_string($postStr,'SimpleXMLElement');
                 $fromUsername = $postObj->FromUserName;
                 $toUsername = $postObj->ToUserName;
                 $keyword = trim($postObj->Content);
