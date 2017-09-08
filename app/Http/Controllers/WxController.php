@@ -48,6 +48,10 @@
 //chmod 777php_log.txt(赋权) chown wwwphp_log.txt(修改主)
 //            error_log(var_export($postStr,1),3,'php_log.txt');
 //日志图片
+
+            $fh = fopen('test.txt','w+');
+            fwrite($fh,$postStr);
+            fclose($fh);
             //extract post data
             if (!empty($postStr)){
                 /* libxml_disable_entity_loader is to prevent XML eXternal Entity Injection,
