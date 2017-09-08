@@ -3,7 +3,7 @@
     class WxController extends Controller
     {
 
-	    /*public function api()
+	    public function api()
 	    {
 		    $echostr = $_GET['echostr'];
 	        if(self::verifySignature()){
@@ -13,7 +13,7 @@
 		}
 	    
 	    
-	    }*/
+	    }
         public static  function verifySignature()
         {
 		//define data send from weixin server 
@@ -37,7 +37,7 @@
 		}
         }
 
-        public function api()
+        public function apibackup()
         {
 
             //get post data, May be due to the different environments
