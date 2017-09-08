@@ -3,14 +3,14 @@
     class WxController extends Controller
     {
 
-	    public function api()
+	    /*public function api()
 	    {
 		    $echostr = $_GET['echostr'];
 	        if(self::verifySignature()){
 			echo $echostr;
 			exit;
 		
-		}
+		}*/
 	    
 	    
 	    }
@@ -37,7 +37,7 @@
 		}
         }
 
-        public function apibackup()
+        public function api()
         {
 
             //get post data, May be due to the different environments
